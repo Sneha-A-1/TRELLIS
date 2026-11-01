@@ -1,0 +1,485 @@
+{
+  "comparison": {
+    "CANOPY": {
+      "latency_ms": 647.545,
+      "latency_urgent_ms": 187.035,
+      "exec_time_s": 250.074,
+      "utilization_pct": 34.97,
+      "alert_ontime_pct": 96.318,
+      "deadline_miss_pct": 0.963,
+      "retained_pct": 54.997,
+      "archive_err_pct": 0.388,
+      "inversion_pct": 3.682,
+      "fog_share_pct": 25.115,
+      "alert_ci95": 1.073
+    },
+    "CLOUD-ONLY": {
+      "latency_ms": 800.0,
+      "latency_urgent_ms": 800.0,
+      "exec_time_s": 0.001,
+      "utilization_pct": 0.0,
+      "alert_ontime_pct": 0.0,
+      "deadline_miss_pct": 25.091,
+      "retained_pct": 100.0,
+      "archive_err_pct": 0.0,
+      "inversion_pct": 100.0,
+      "fog_share_pct": 0.0,
+      "alert_ci95": 0.0
+    },
+    "EDGE-ONLY": {
+      "latency_ms": 48555.476,
+      "latency_urgent_ms": 46581.104,
+      "exec_time_s": 343.473,
+      "utilization_pct": 99.832,
+      "alert_ontime_pct": 3.689,
+      "deadline_miss_pct": 94.338,
+      "retained_pct": 100.0,
+      "archive_err_pct": 0.0,
+      "inversion_pct": 96.311,
+      "fog_share_pct": 100.0,
+      "alert_ci95": 0.744
+    },
+    "IND-BEST": {
+      "latency_ms": 671.155,
+      "latency_urgent_ms": 259.938,
+      "exec_time_s": 249.962,
+      "utilization_pct": 35.965,
+      "alert_ontime_pct": 94.076,
+      "deadline_miss_pct": 1.75,
+      "retained_pct": 22.569,
+      "archive_err_pct": 0.685,
+      "inversion_pct": 70.763,
+      "fog_share_pct": 25.794,
+      "alert_ci95": 5.598
+    },
+    "STATIC": {
+      "latency_ms": 48555.476,
+      "latency_urgent_ms": 46581.104,
+      "exec_time_s": 343.473,
+      "utilization_pct": 99.832,
+      "alert_ontime_pct": 3.689,
+      "deadline_miss_pct": 94.338,
+      "retained_pct": 62.598,
+      "archive_err_pct": 0.442,
+      "inversion_pct": 96.311,
+      "fog_share_pct": 100.0,
+      "alert_ci95": 0.744
+    }
+  },
+  "ablation": {
+    "CANOPY": {
+      "alert_ontime_pct": 96.318,
+      "inversion_pct": 3.682,
+      "latency_urgent_ms": 187.035,
+      "archive_err_pct": 0.388,
+      "retained_pct": 54.997
+    },
+    "CANOPY-L3": {
+      "alert_ontime_pct": 96.318,
+      "inversion_pct": 70.666,
+      "latency_urgent_ms": 187.035,
+      "archive_err_pct": 0.685,
+      "retained_pct": 22.569
+    },
+    "CANOPY-L4": {
+      "alert_ontime_pct": 94.128,
+      "inversion_pct": 5.872,
+      "latency_urgent_ms": 255.548,
+      "archive_err_pct": 0.388,
+      "retained_pct": 54.997
+    },
+    "CANOPY-NOFB": {
+      "alert_ontime_pct": 96.22,
+      "inversion_pct": 3.78,
+      "latency_urgent_ms": 190.605,
+      "archive_err_pct": 0.388,
+      "retained_pct": 54.997
+    },
+    "IND-BEST": {
+      "alert_ontime_pct": 94.076,
+      "inversion_pct": 70.763,
+      "latency_urgent_ms": 259.938,
+      "archive_err_pct": 0.685,
+      "retained_pct": 22.569
+    }
+  },
+  "load_sweep": {
+    "1.5": {
+      "CANOPY": {
+        "alert_ontime_pct": 96.324,
+        "inversion_pct": 3.676,
+        "latency_ms": 708.457,
+        "utilization_pct": 5.927,
+        "rate_per_s": 14.751
+      },
+      "CLOUD-ONLY": {
+        "alert_ontime_pct": 0.0,
+        "inversion_pct": 100.0,
+        "latency_ms": 800.0,
+        "utilization_pct": 0.0,
+        "rate_per_s": 14.751
+      },
+      "EDGE-ONLY": {
+        "alert_ontime_pct": 96.405,
+        "inversion_pct": 3.595,
+        "latency_ms": 166.891,
+        "utilization_pct": 39.681,
+        "rate_per_s": 14.751
+      },
+      "IND-BEST": {
+        "alert_ontime_pct": 96.201,
+        "inversion_pct": 65.768,
+        "latency_ms": 727.023,
+        "utilization_pct": 4.624,
+        "rate_per_s": 14.751
+      },
+      "STATIC": {
+        "alert_ontime_pct": 96.405,
+        "inversion_pct": 3.595,
+        "latency_ms": 166.891,
+        "utilization_pct": 39.681,
+        "rate_per_s": 14.751
+      }
+    },
+    "3.0": {
+      "CANOPY": {
+        "alert_ontime_pct": 96.906,
+        "inversion_pct": 3.094,
+        "latency_ms": 596.075,
+        "utilization_pct": 24.59,
+        "rate_per_s": 29.115
+      },
+      "CLOUD-ONLY": {
+        "alert_ontime_pct": 0.0,
+        "inversion_pct": 100.0,
+        "latency_ms": 800.0,
+        "utilization_pct": 0.0,
+        "rate_per_s": 29.115
+      },
+      "EDGE-ONLY": {
+        "alert_ontime_pct": 70.667,
+        "inversion_pct": 29.333,
+        "latency_ms": 3033.468,
+        "utilization_pct": 74.838,
+        "rate_per_s": 29.115
+      },
+      "IND-BEST": {
+        "alert_ontime_pct": 96.891,
+        "inversion_pct": 48.545,
+        "latency_ms": 598.304,
+        "utilization_pct": 24.278,
+        "rate_per_s": 29.115
+      },
+      "STATIC": {
+        "alert_ontime_pct": 70.667,
+        "inversion_pct": 29.333,
+        "latency_ms": 3033.468,
+        "utilization_pct": 74.838,
+        "rate_per_s": 29.115
+      }
+    },
+    "4.5": {
+      "CANOPY": {
+        "alert_ontime_pct": 96.642,
+        "inversion_pct": 3.358,
+        "latency_ms": 650.436,
+        "utilization_pct": 26.691,
+        "rate_per_s": 43.481
+      },
+      "CLOUD-ONLY": {
+        "alert_ontime_pct": 0.0,
+        "inversion_pct": 100.0,
+        "latency_ms": 800.0,
+        "utilization_pct": 0.0,
+        "rate_per_s": 43.481
+      },
+      "EDGE-ONLY": {
+        "alert_ontime_pct": 15.267,
+        "inversion_pct": 84.733,
+        "latency_ms": 58540.128,
+        "utilization_pct": 99.063,
+        "rate_per_s": 43.481
+      },
+      "IND-BEST": {
+        "alert_ontime_pct": 96.768,
+        "inversion_pct": 63.841,
+        "latency_ms": 645.176,
+        "utilization_pct": 27.635,
+        "rate_per_s": 43.481
+      },
+      "STATIC": {
+        "alert_ontime_pct": 15.267,
+        "inversion_pct": 84.733,
+        "latency_ms": 58540.128,
+        "utilization_pct": 99.063,
+        "rate_per_s": 43.481
+      }
+    },
+    "5.5": {
+      "CANOPY": {
+        "alert_ontime_pct": 96.076,
+        "inversion_pct": 3.924,
+        "latency_ms": 648.1,
+        "utilization_pct": 34.917,
+        "rate_per_s": 53.567
+      },
+      "CLOUD-ONLY": {
+        "alert_ontime_pct": 0.0,
+        "inversion_pct": 100.0,
+        "latency_ms": 800.0,
+        "utilization_pct": 0.0,
+        "rate_per_s": 53.567
+      },
+      "EDGE-ONLY": {
+        "alert_ontime_pct": 0.539,
+        "inversion_pct": 99.461,
+        "latency_ms": 243822.318,
+        "utilization_pct": 99.988,
+        "rate_per_s": 53.567
+      },
+      "IND-BEST": {
+        "alert_ontime_pct": 92.909,
+        "inversion_pct": 71.465,
+        "latency_ms": 674.572,
+        "utilization_pct": 35.933,
+        "rate_per_s": 53.567
+      },
+      "STATIC": {
+        "alert_ontime_pct": 0.539,
+        "inversion_pct": 99.461,
+        "latency_ms": 243822.318,
+        "utilization_pct": 99.988,
+        "rate_per_s": 53.567
+      }
+    },
+    "7.0": {
+      "CANOPY": {
+        "alert_ontime_pct": 90.24,
+        "inversion_pct": 9.76,
+        "latency_ms": 989.562,
+        "utilization_pct": 42.505,
+        "rate_per_s": 67.934
+      },
+      "CLOUD-ONLY": {
+        "alert_ontime_pct": 0.0,
+        "inversion_pct": 100.0,
+        "latency_ms": 800.0,
+        "utilization_pct": 0.0,
+        "rate_per_s": 67.934
+      },
+      "EDGE-ONLY": {
+        "alert_ontime_pct": 0.442,
+        "inversion_pct": 99.558,
+        "latency_ms": 523878.421,
+        "utilization_pct": 99.964,
+        "rate_per_s": 67.934
+      },
+      "IND-BEST": {
+        "alert_ontime_pct": 58.595,
+        "inversion_pct": 70.36,
+        "latency_ms": 1981.397,
+        "utilization_pct": 43.559,
+        "rate_per_s": 67.934
+      },
+      "STATIC": {
+        "alert_ontime_pct": 0.442,
+        "inversion_pct": 99.558,
+        "latency_ms": 523878.421,
+        "utilization_pct": 99.964,
+        "rate_per_s": 67.934
+      }
+    },
+    "9.0": {
+      "CANOPY": {
+        "alert_ontime_pct": 92.474,
+        "inversion_pct": 7.526,
+        "latency_ms": 737.538,
+        "utilization_pct": 53.051,
+        "rate_per_s": 87.344
+      },
+      "CLOUD-ONLY": {
+        "alert_ontime_pct": 0.0,
+        "inversion_pct": 100.0,
+        "latency_ms": 800.0,
+        "utilization_pct": 0.0,
+        "rate_per_s": 87.344
+      },
+      "EDGE-ONLY": {
+        "alert_ontime_pct": 0.391,
+        "inversion_pct": 99.609,
+        "latency_ms": 898487.18,
+        "utilization_pct": 99.963,
+        "rate_per_s": 87.344
+      },
+      "IND-BEST": {
+        "alert_ontime_pct": 70.529,
+        "inversion_pct": 59.64,
+        "latency_ms": 1039.39,
+        "utilization_pct": 56.135,
+        "rate_per_s": 87.344
+      },
+      "STATIC": {
+        "alert_ontime_pct": 0.391,
+        "inversion_pct": 99.609,
+        "latency_ms": 898487.18,
+        "utilization_pct": 99.963,
+        "rate_per_s": 87.344
+      }
+    }
+  },
+  "node_sweep": {
+    "4": {
+      "CANOPY": {
+        "exec_time_s": 1500.289,
+        "alert_ontime_pct": 86.531,
+        "utilization_pct": 60.167
+      },
+      "CLOUD-ONLY": {
+        "exec_time_s": 0.001,
+        "alert_ontime_pct": 0.0,
+        "utilization_pct": 0.0
+      },
+      "EDGE-ONLY": {
+        "exec_time_s": 3614.59,
+        "alert_ontime_pct": 0.242,
+        "utilization_pct": 99.996
+      },
+      "IND-BEST": {
+        "exec_time_s": 1500.371,
+        "alert_ontime_pct": 33.127,
+        "utilization_pct": 61.747
+      },
+      "STATIC": {
+        "exec_time_s": 3614.59,
+        "alert_ontime_pct": 0.242,
+        "utilization_pct": 99.996
+      }
+    },
+    "6": {
+      "CANOPY": {
+        "exec_time_s": 1500.837,
+        "alert_ontime_pct": 96.076,
+        "utilization_pct": 34.917
+      },
+      "CLOUD-ONLY": {
+        "exec_time_s": 0.001,
+        "alert_ontime_pct": 0.0,
+        "utilization_pct": 0.0
+      },
+      "EDGE-ONLY": {
+        "exec_time_s": 2057.742,
+        "alert_ontime_pct": 0.539,
+        "utilization_pct": 99.988
+      },
+      "IND-BEST": {
+        "exec_time_s": 1500.161,
+        "alert_ontime_pct": 92.909,
+        "utilization_pct": 35.933
+      },
+      "STATIC": {
+        "exec_time_s": 2057.742,
+        "alert_ontime_pct": 0.539,
+        "utilization_pct": 99.988
+      }
+    },
+    "8": {
+      "CANOPY": {
+        "exec_time_s": 1500.289,
+        "alert_ontime_pct": 96.22,
+        "utilization_pct": 28.968
+      },
+      "CLOUD-ONLY": {
+        "exec_time_s": 0.001,
+        "alert_ontime_pct": 0.0,
+        "utilization_pct": 0.0
+      },
+      "EDGE-ONLY": {
+        "exec_time_s": 1674.894,
+        "alert_ontime_pct": 12.974,
+        "utilization_pct": 99.218
+      },
+      "IND-BEST": {
+        "exec_time_s": 1500.482,
+        "alert_ontime_pct": 93.464,
+        "utilization_pct": 29.28
+      },
+      "STATIC": {
+        "exec_time_s": 1674.894,
+        "alert_ontime_pct": 12.974,
+        "utilization_pct": 99.218
+      }
+    },
+    "10": {
+      "CANOPY": {
+        "exec_time_s": 1500.641,
+        "alert_ontime_pct": 96.566,
+        "utilization_pct": 23.372
+      },
+      "CLOUD-ONLY": {
+        "exec_time_s": 0.001,
+        "alert_ontime_pct": 0.0,
+        "utilization_pct": 0.0
+      },
+      "EDGE-ONLY": {
+        "exec_time_s": 1526.931,
+        "alert_ontime_pct": 53.241,
+        "utilization_pct": 86.35
+      },
+      "IND-BEST": {
+        "exec_time_s": 1500.371,
+        "alert_ontime_pct": 96.541,
+        "utilization_pct": 23.077
+      },
+      "STATIC": {
+        "exec_time_s": 1526.931,
+        "alert_ontime_pct": 53.241,
+        "utilization_pct": 86.35
+      }
+    },
+    "12": {
+      "CANOPY": {
+        "exec_time_s": 1500.371,
+        "alert_ontime_pct": 96.922,
+        "utilization_pct": 18.841
+      },
+      "CLOUD-ONLY": {
+        "exec_time_s": 0.001,
+        "alert_ontime_pct": 0.0,
+        "utilization_pct": 0.0
+      },
+      "EDGE-ONLY": {
+        "exec_time_s": 1508.754,
+        "alert_ontime_pct": 83.419,
+        "utilization_pct": 69.205
+      },
+      "IND-BEST": {
+        "exec_time_s": 1500.482,
+        "alert_ontime_pct": 96.937,
+        "utilization_pct": 18.322
+      },
+      "STATIC": {
+        "exec_time_s": 1508.754,
+        "alert_ontime_pct": 83.419,
+        "utilization_pct": 69.205
+      }
+    }
+  },
+  "wilcoxon": {
+    "inversion_canopy_vs_indbest": 0.03125,
+    "alert_canopy_vs_indbest": 0.84375,
+    "urgent_latency_canopy_vs_indbest": 0.03125,
+    "inversion_canopy_vs_l3only": 0.03125
+  },
+  "setup": {
+    "tasks": 80350,
+    "nodes": 35,
+    "functions": 94,
+    "rate_per_s": 53.6,
+    "urgent_pct": 25.15,
+    "demand_ms_mean": 166.4,
+    "demand_ms_p99": 948.8,
+    "novel_pct": 22.13,
+    "soil_records": 185711,
+    "soil_urgent_pct": 27.25
+  }
+}
